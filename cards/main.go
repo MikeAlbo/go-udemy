@@ -2,6 +2,7 @@ package main
 
 func main() {
 
-	cards := newDeckFromFile("MyCar")
+	cards := newDeckFromFile("MyCards")
+	cards.shuffle()
 	cards.print()
 }
