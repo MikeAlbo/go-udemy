@@ -13,13 +13,13 @@ import (
 // example "0 is even"
 
 func main() {
-	ints := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	n := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
-	for _, int := range ints {
-		if int%2 == 0 {
-			fmt.Println(strconv.Itoa(int) + " is even")
+	for _, v := range n {
+		if v%2 == 0 {
+			fmt.Println(v, "is even")
 		} else {
-			fmt.Println(strconv.Itoa(int) + " is odd")
+			fmt.Println(strconv.Itoa(v) + " is odd")
 		}
 	}
 }
